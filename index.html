@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q2SW2</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- external css -->
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <!-- python link-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap link -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Kanadaka&family=Alkatra:wght@400..700&family=Audiowide&family=Bokor&family=Bree+Serif&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cookie&family=DynaPuff:wght@400..700&family=Eagle+Lake&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Great+Vibes&family=Lexend+Giga:wght@100..900&family=Madimi+One&family=Nanum+Myeongjo&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+AU+SA:wght@100..400&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Silkscreen:wght@400;700&family=VT323&display=swap" rel="stylesheet">
+    <!-- google fonts link -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="container" id="header">
+            <h1>Conditional Statements in Python</h1>
+        </div>
+
+        <br>
+
+        <form>  
+            <label for="name">First Name: </label>
+		    <input type="text" class="form-control" id="fname" placeholder="Enter your first name"><br>
+            <label for="school">Last Name: </label>
+        	<input type="text" class="form-control" id="lname" placeholder="Enter your last name"><br>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <label id="mlabel"></label>
+		            <input type="text" class="form-control" id="mvalue" placeholder="Enter your grade"><br>
+                    <label id="elabel" for="school"></label>
+        	        <input type="text" class="form-control" id="evalue" placeholder="Enter your grade"><br>
+                    <label id="slabel" for="school"></label>
+        	        <input type="text" class="form-control" id="svalue" placeholder="Enter your grade"><br>
+                </div>
+                
+                <br>
+
+                <div class="col-sm-6">
+                    <label id="flabel"></label>
+		            <input type="text" class="form-control" id="fvalue" placeholder="Enter your grade"><br>
+                    <label id="ilabel" for="school"></label>
+        	        <input type="text" class="form-control" id="ivalue" placeholder="Enter your grade"><br>
+                    <label id="plabel" for="school"></label>
+        	        <input type="text" class="form-control" id="pvalue" placeholder="Enter your grade"><br>
+                </div>
+            </div>
+
+            <div class="center">
+                <button type="button" class="btn btn-dark" py-click="generating_grade">Generate Information</button>
+            </div>
+        </form>
+    </div> 
+    
+    <br>
+
+    <div class="container output">
+        <h3 id="name">Student profile:</h3>
+        <br>
+        <h6 id="math"></h6>
+        <h6 id="eng"></h6>
+        <h6 id="sci"></h6>
+        <h6 id="fil"></h6>
+        <h6 id="ict"></h6>
+        <h6 id="pe"></h6>
+        <br>
+        <h4 id="GWA">Your General Weighted Average is </h3>
+        <h4 id="remarks"></h4>
+    </div>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>

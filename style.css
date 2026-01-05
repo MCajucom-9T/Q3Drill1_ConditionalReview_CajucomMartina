@@ -1,0 +1,66 @@
+body {
+    background-color: #2E414B !important;
+}
+
+input {
+    width: 70%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #B7ADCF !important;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 40px;
+    margin-right: 30px;
+}
+
+#img {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    width: 60px;
+}
+
+.container {
+    background-color: #535657;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+}
+
+#header {
+    text-align: center;
+    color: #2E414B;
+    background-color: #B7ADCF;
+    padding: 10px;
+    border-radius: 30px;
+    font-family: "Madimi One", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+
+h3, h4, h6, label {
+    text-align: center;
+    color: #ccc !important;
+}
+
+.hours {
+    margin-top: 50px;
+}
+
+.order {
+    text-align: center;
+}
+
+button {
+    background-color: #B7ADCF !important;
+    color: #2E414B !important;
+    width: 100%;
+}
